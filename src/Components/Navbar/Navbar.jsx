@@ -10,11 +10,11 @@ import { ReactComponent as ArrowDown } from "../../Assets/Icons/ArrowDown.svg";
 
 export default function Navbar() {
   const ref = useRef();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [IsMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const checkIfClickedOutside = (e) => {
-      if (isMenuOpen && ref.current && !ref.current.contains(e.target)) {
+      if (IsMenuOpen && ref.current && !ref.current.contains(e.target)) {
         setIsMenuOpen(false);
       }
     };
@@ -24,7 +24,7 @@ export default function Navbar() {
     return () => {
       document.removeEventListener("mousedown", checkIfClickedOutside);
     };
-  }, [isMenuOpen]);
+  }, [IsMenuOpen]);
 
   return (
     <nav>
@@ -37,6 +37,7 @@ export default function Navbar() {
           to="/"
           className={({ isActive }) => "NavLink" + (isActive ? " Active" : "")}
           onMouseOver={() => setIsMenuOpen(true)}
+          onClick={() => setIsMenuOpen(!IsMenuOpen)}
         >
           Home
           <ArrowDown className="ArrowDown" />
@@ -44,7 +45,7 @@ export default function Navbar() {
           {/* DropDownMenu */}
           <div
             className={
-              isMenuOpen ? " DropDownContent" : "DropDownContentHidden"
+              IsMenuOpen ? " DropDownContent" : "DropDownContentHidden"
             }
             ref={ref}
             onMouseUp={() => setIsMenuOpen(false)}

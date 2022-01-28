@@ -10,7 +10,7 @@ export default function OurProfessionals() {
   const ProfilePages = Math.ceil(JSONDataQuantity / 5);
   const [ActivePage, setActivePage] = useState(1);
   const [Seconds, setSeconds] = useState(0);
-  const SliderSpeed = 1;
+  const SliderSpeed = 5;
 
   // Modal close with click outside of Modal
   useEffect(() => {
@@ -79,25 +79,21 @@ export default function OurProfessionals() {
           return (
             <div
               className={
-                Math.floor(index / 5) + 1 === ActivePage
-                  ? "Profiles"
-                  : "Profiles Hidden"
+                Math.floor(index / 5) + 1 === ActivePage ? "" : "Hidden"
               }
             >
-              <div className="OverlayOverPicture">
-                <div className="Overlay" onClick={() => setModalProfile(obj)}>
-                  <img
-                    src={require("../../Assets/Images" + obj.profile_picture)}
-                    alt="Professional"
-                    className="ProfessionalPicture"
-                  />
-                  <div className="OverlayText">
-                    <h5 className="ProfessionalName">
-                      {obj.first_name} {obj.last_name}
-                    </h5>
-                    <div className="Plus">+</div>
-                    <h6 className="ProfessionalTitle">[ {obj.job_title} ]</h6>
-                  </div>
+              <div className="Overlay" onClick={() => setModalProfile(obj)}>
+                <img
+                  src={require("../../Assets/Images" + obj.profile_picture)}
+                  alt="Professional"
+                  className="ProfessionalPicture"
+                />
+                <div className="OverlayText">
+                  <h5 className="ProfessionalName">
+                    {obj.first_name} {obj.last_name}
+                  </h5>
+                  <div className="Plus">+</div>
+                  <h6 className="ProfessionalTitle">[ {obj.job_title} ]</h6>
                 </div>
               </div>
             </div>
