@@ -1,0 +1,26 @@
+@import "../../global";
+
+.TitleComponent {
+  font-family: "Titillium Web";
+  @include FlexCentered;
+  flex-direction: column;
+
+  div {
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    color: $LightGrey;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  h3 {
+    margin: 20px 0;
+    font-size: 40px;
+    font-weight: normal;
+    color: #000000;
+  }
+
+  .Underline {
+    width: 99px;
+    border-bottom: 3px dotted #000000;
+  }
+}

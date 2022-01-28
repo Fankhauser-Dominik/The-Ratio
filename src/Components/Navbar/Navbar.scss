@@ -1,0 +1,146 @@
+@import "../../global";
+
+nav {
+  font-family: "Titillium Web";
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: $HeaderBorder;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #ffffff60;
+  z-index: 200;
+
+  .Logo {
+    height: 100%;
+  }
+
+  .NavLink {
+    @include FlexCentered;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 20px;
+
+    &:hover {
+      font-weight: bold;
+      .Triangle {
+        fill: #ffffff;
+      }
+    }
+
+    .Triangle {
+      position: absolute;
+      left: calc(50% - 12px);
+      top: 46px;
+      height: 6px;
+      fill: #ffffff00;
+    }
+  }
+
+  .Active {
+    .Triangle {
+      fill: #ffffff;
+    }
+  }
+
+  .NoArrow {
+    left: 45% !important;
+  }
+
+  .Navigation {
+    @include FlexCentered;
+    .ArrowDown {
+      fill: white;
+      height: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  .RightMenu {
+    @include FlexCentered;
+    div {
+      @include FlexCentered;
+      height: 100%;
+    }
+
+    .Icons {
+      cursor: pointer;
+      fill: #ffffff;
+      height: 20px;
+      &:hover {
+        height: 24px;
+      }
+    }
+
+    .LeftIcons {
+      margin-right: 40px;
+      margin-left: -40px;
+
+      .Badge {
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+        right: 30px;
+        padding: 5px 8px;
+        font-size: 10px;
+        border-radius: 50%;
+        background: #202020;
+        color: #ffffff;
+      }
+    }
+
+    .HamburgerMenu {
+      width: $HeaderBorder;
+    }
+  }
+}
+
+// Dropdown Menu
+.DropDownContentHidden {
+  display: none;
+}
+
+.DropDownContent {
+  @include FlexCentered;
+  flex-direction: column;
+  font-weight: normal;
+  position: absolute;
+  top: 60px;
+  background-color: #2e2e2e;
+  width: 100%;
+  min-width: 200px;
+  padding: 12px 30px;
+}
+
+.Main {
+  display: flex;
+  flex-direction: row;
+  .Divider {
+    @include FlexCentered;
+    border-top: 1px solid #ffffff;
+    width: 30px;
+    height: 50%;
+    margin-right: 10px;
+  }
+}
+
+.Primary,
+.Secondary {
+  text-align: left;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  text-transform: none;
+  padding: 12px 20px;
+  &:hover {
+    width: 100%;
+    background-color: #292929;
+  }
+}
+
+.Secondary {
+  color: #b4b4b4;
+}

@@ -1,0 +1,30 @@
+@import "../../global";
+
+.Header {
+  margin: 0;
+  height: 950px;
+  img {
+    width: 100%;
+    height: $SectionHeight;
+  }
+
+  .RightLine {
+    border-left: 1px solid #ffffff60;
+    width: $HeaderBorder;
+    height: $SectionHeight;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 19;
+  }
+
+  .BottomLine {
+    border-top: 1px solid #ffffff60;
+    width: 100%;
+    height: $HeaderBorder;
+    position: absolute;
+    top: 870px;
+    left: 0;
+    z-index: 18;
+  }
+}

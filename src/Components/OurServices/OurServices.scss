@@ -1,0 +1,66 @@
+@import "../../global";
+
+.OurServices {
+  font-family: "Titillium Web";
+  @include FlexCentered;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 800px;
+
+  .StatsContainer {
+    @include FlexCentered;
+    justify-content: space-evenly;
+    width: 70%;
+
+    .Stats {
+      @include FlexCentered;
+      flex-direction: column;
+
+      .Quantity {
+        color: #c3c3c3;
+        font-size: 36px;
+        font-family: "Josefin Sans";
+      }
+      .Title {
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #000000;
+      }
+    }
+  }
+
+  .ServicesContainer {
+    @include FlexCentered;
+
+    .Services {
+      @include FlexCentered;
+      flex-direction: column;
+      width: 360px;
+      height: 320px;
+      margin: 0 20px;
+      background-image: url("../../Assets/Images/FloorPlanSmall.jpg");
+      background-size: contain;
+
+      p {
+        font-family: Raleway;
+        width: 70%;
+        color: #5a5a5a;
+      }
+
+      h5 {
+        font-size: 26px;
+        font-weight: normal;
+        margin: 20px 0;
+      }
+    }
+
+    .ReadMore {
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}

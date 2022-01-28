@@ -1,0 +1,54 @@
+@import "./global";
+
+.App {
+  margin: 0;
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.Body {
+  padding-bottom: $FooterHeight;
+}
+
+footer {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-width: 320px;
+  background-color: #202020;
+  min-height: $FooterHeight;
+}
+
+@media screen and (max-width: $Phone) {
+  .Body {
+    padding-bottom: $FooterHeight + 400px;
+  }
+}
+
+@media screen and (min-width: $Phone) {
+  .Body {
+    padding-bottom: $FooterHeight + 320px;
+  }
+}
+
+@media screen and (min-width: $Tablet) {
+  .Body {
+    padding-bottom: $FooterHeight + 100px;
+  }
+}
+
+@media screen and (min-width: $Desktop) {
+  .Body {
+    padding-bottom: $FooterHeight + 85px;
+  }
+}
+
+@media screen and (min-width: $LargeDesktop) {
+  .Body {
+    padding-bottom: $FooterHeight;
+  }
+}

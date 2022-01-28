@@ -1,0 +1,45 @@
+@import "../../global";
+
+aside {
+  font-family: "Titillium Web";
+  border-right: 1px solid #ffffff60;
+  width: 80px;
+  height: $SectionHeight;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include FlexCentered;
+  writing-mode: vertical-lr;
+  color: #ffffff;
+  text-transform: uppercase;
+  z-index: 28;
+
+  div {
+    @include FlexCentered;
+    margin: 20px;
+    transform: rotate(180deg);
+    width: 100%;
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .Triangle {
+      position: absolute;
+      left: -3px;
+      top: 42%;
+      height: 6px;
+      fill: #ffffff00;
+      transform: rotate(90deg);
+    }
+    &:hover {
+      a {
+        font-weight: bold;
+      }
+      .Triangle {
+        fill: #ffffff;
+      }
+    }
+  }
+}

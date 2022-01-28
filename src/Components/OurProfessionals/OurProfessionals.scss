@@ -1,0 +1,133 @@
+@import "../../global";
+
+.ProfessionalsContainer {
+  width: 100%;
+  height: $SectionHeight;
+  @include FlexCentered;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-image: url(../../Assets/Images/FloorPlan4.jpg);
+  background-size: cover;
+}
+
+.ProfileContainer {
+  @include FlexCentered;
+}
+
+.Modal {
+  @include FlexCentered;
+  flex-direction: column;
+  position: relative;
+  width: 40%;
+  padding: 40px 0;
+  background-color: #98989880;
+  border-radius: 4px;
+  z-index: 1000;
+  position: absolute;
+  bottom: 25%;
+  left: 30%;
+
+  .ModalPicture {
+    position: relative;
+    transition: filter 0.5s ease;
+    width: 90%;
+    aspect-ratio: 1;
+    margin-bottom: 20px;
+  }
+
+  .NameAndDescription {
+    width: 80%;
+    strong {
+      font-size: 24px;
+    }
+  }
+}
+
+.Profiles {
+  .OverlayOverPicture {
+    width: 100%;
+    aspect-ratio: 1;
+    z-index: 31;
+  }
+}
+
+.Overlay {
+  position: relative;
+  cursor: pointer;
+  z-index: 352;
+  transition: opacity 1s ease-in-out;
+  .OverlayText {
+    position: absolute;
+    @include FlexCentered;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 4px);
+    margin: 0;
+    top: 0;
+    color: #ffffff;
+    background-color: #0000009a;
+    opacity: 0;
+  }
+
+  &:hover {
+    .OverlayText {
+      opacity: 1;
+    }
+  }
+}
+
+.ProfessionalName {
+  margin: 0;
+  font-weight: 500;
+  font-size: 30px;
+}
+.Plus {
+  font-size: 80px;
+}
+.ProfessionalTitle {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+}
+.ProfessionalPicture {
+  width: 100%;
+  aspect-ratio: 1;
+  z-index: 31;
+  transition: filter 1s ease-in-out;
+}
+
+.Pagination {
+  @include FlexCentered;
+  .Circle {
+    @include FlexCentered;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    height: 30px;
+    aspect-ratio: 1;
+    margin: 0 10px;
+  }
+
+  .CirclePlaceholder {
+    @include FlexCentered;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 30px;
+    aspect-ratio: 1;
+    margin: 0 10px;
+  }
+
+  .InnerCircle {
+    font-size: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    height: 4px;
+    aspect-ratio: 1;
+    background-color: #000000;
+  }
+}
+
+.Hidden {
+  display: none;
+}

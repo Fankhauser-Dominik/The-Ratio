@@ -1,0 +1,142 @@
+@import "../../global";
+
+.BlogContainer {
+  font-family: "Titillium Web";
+  @include FlexCentered;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  justify-content: space-evenly;
+  text-align: left;
+
+  .TitleComponent {
+    @include FlexStart;
+  }
+
+  .TopContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 69%;
+
+    .ViewAll {
+      cursor: pointer;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: bold;
+      height: auto;
+      aspect-ratio: 3 / 1;
+      margin: 20px;
+      padding: 20px;
+      border: none;
+      background-color: #202020;
+      color: #ffffff;
+
+      &:hover {
+        color: #202020;
+        background-color: #ffffff;
+        border: 1px solid #202020;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 13px;
+        background: #000000;
+        width: 100%;
+        height: 2px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        right: -7px;
+        background: #000000;
+        width: 2px;
+        height: 100%;
+      }
+    }
+  }
+
+  .BottomContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+    .BlogPost {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      width: 32%;
+      margin: 15px;
+      border-radius: 3px;
+      border: 1px solid $LightGrey;
+
+      &:hover {
+        background: #e9e9e9;
+      }
+
+      .BlogPicture {
+        position: relative;
+        margin: 15px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .Category {
+          text-transform: uppercase;
+          font-weight: 600;
+          color: #ffffff;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #202020;
+          padding: 8px 15px;
+        }
+      }
+
+      .BlogPostText {
+        margin: 3px;
+      }
+
+      .PublishedAuthor {
+        display: flex;
+        align-items: center;
+        font-family: "Josefin Sans";
+        text-transform: uppercase;
+        color: $LightGrey;
+        margin-top: 34px;
+
+        span {
+          margin: 0 10px;
+        }
+      }
+
+      .BlogTitle {
+        margin: 10px;
+        font-size: 22px;
+        font-weight: 400;
+        color: $Grey;
+      }
+
+      .BlogDescription {
+        font-family: Raleway;
+        margin: 0;
+        color: $LightGrey;
+        margin: 10px;
+      }
+
+      .Circle {
+        border: 1px solid #000000;
+        border-radius: 50%;
+        height: 4px;
+        aspect-ratio: 1;
+        background-color: #000000;
+        margin: 2px;
+      }
+    }
+  }
+}

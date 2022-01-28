@@ -1,0 +1,30 @@
+@import "../../global";
+
+.ScrollToTop {
+  @include FlexCentered;
+  cursor: pointer;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  height: 40px;
+  aspect-ratio: 1;
+  z-index: 90;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  background-color: $LightGrey;
+
+  .ScrollToTopArrow {
+    @include FlexCentered;
+    fill: #ffffff;
+    height: 30px;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,3 +1,7 @@
+Codingchallenge Dominik Fankhauser
+
+![Coding Challenge](./src/Assets/Images/code-challenge-mockup.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

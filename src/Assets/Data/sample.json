@@ -1,0 +1,58 @@
+[
+  {
+    "first_name": "John",
+    "last_name": "Wolksmen",
+    "job_title": "CTO",
+    "description": "Hi I'm John and I am the CTO of The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/john.jpeg"
+  },
+  {
+    "first_name": "April",
+    "last_name": "Hum",
+    "job_title": "Senior Designer",
+    "description": "Hi I'm April and I am a senior designer at The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/april.jpeg"
+  },
+  {
+    "first_name": "Billy",
+    "last_name": "Yoke",
+    "job_title": "Office Clown",
+    "description": "Hi I'm Billy and I am the office clown of The Ratio Interior Design Studio. (I also do the financial statements) We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/billy.jpeg"
+  },
+  {
+    "first_name": "Alfred",
+    "last_name": "Holmes",
+    "job_title": "Junior Programmer",
+    "description": "Hi I'm Alfred and I am a junior programmer of The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/alfred.jpeg"
+  },
+  {
+    "first_name": "Sam",
+    "last_name": "Williams",
+    "job_title": "Marketing Intern",
+    "description": "Hi I'm Sam and I work in marketing at The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/sam.jpeg"
+  },
+  {
+    "first_name": "Bob",
+    "last_name": "Williams",
+    "job_title": "Marketing Intern",
+    "description": "Hi I'm Bob and I work in marketing at The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/bob.jpeg"
+  },
+  {
+    "first_name": "Jacob",
+    "last_name": "Williams",
+    "job_title": "Marketing Intern",
+    "description": "Hi I'm Jacob and I work in marketing at The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/jacob.jpeg"
+  },
+  {
+    "first_name": "Robert",
+    "last_name": "Williams",
+    "job_title": "Marketing Intern",
+    "description": "Hi I'm Robert and I work in marketing at The Ratio Interior Design Studio. We pride ourselves on being builders - creating architectural and creative solutions to help people realize their vision and make them a reality. Wanna work with us?",
+    "profile_picture": "/robert.jpeg"
+  }
+]
